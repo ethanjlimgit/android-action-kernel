@@ -12,22 +12,7 @@
 
 > **🚧 The Problem:** Web Agents (`Browser Use`) are sandboxed in Chrome. Desktop Agents (`Computer Use`) are trapped on laptops.
 >
-> **✅ The Solution:** **Android Use** lives on the device where work actually happens. It creates a semantic bridge between your LLM and the chaotic native UI of Android.
-
----
-
-### ⚡ Why This Exists (The "Moat")
-
-Most agents fight for attention in the browser. **Android Use** fights for utility in the OS.
-
-| Feature | 🌐 Web Agents (Browser Use) | 💻 Desktop Agents (Claude) | 📱 **Android Use** |
-| :--- | :--- | :--- | :--- |
-| **Environment** | Sandboxed Browser | Desktop OS (Mac/Windows) | **Mobile OS (Android)** |
-| **Filesystem** | ❌ Blocked | ✅ Local Only | **✅ Full Local + Camera** |
-| **App Switching** | ❌ Impossible | ✅ Desktop Apps | **✅ Native Mobile Apps** |
-| **Use Case** | Research, Booking | Coding, Admin | **Field Ops, Logistics, Gig** |
-
----
+> **✅ The Solution:** **Android Use** lives on the device where work actually happens. It creates a semantic bridge between your LLM and the chaotic native UI of Android. 
 
 ### 🚀 Quick Start
 
