@@ -1,38 +1,40 @@
 # 📱 Android Use
 
-**The open-source library for controlling native Android apps. Heavily inspired by [Browser Use](https://github.com/browser-use/browser-use).**
+**The open-source library for controlling native Android apps.**
+*Heavily inspired by Browser Use, but built for the physical world.*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![Status: Beta](https://img.shields.io/badge/Status-Public_Beta-orange)]()
+[![Status: Public Beta](https://img.shields.io/badge/Status-Public_Beta-orange)]()
+[![Twitter Follow](https://img.shields.io/twitter/follow/AndroidUse?style=social)](https://twitter.com/AndroidUse)
 
-**Android Use** connects your AI Agents to native Android applications. It creates a self-healing, semantic bridge between your LLM and the chaotic Android UI.
+**Android Use** connects AI Agents to native Android applications. It allows LLMs to interact with the "real world" apps that web agents cannot reach—Logistics, Gig Economy, Banking, and Identity.
 
-### ⚡ Why Android Use?
+> **🚧 The Problem:** Web Agents (`Browser Use`) are sandboxed in Chrome. Desktop Agents (`Computer Use`) are trapped on laptops.
+>
+> **✅ The Solution:** **Android Use** lives on the device where work actually happens. It creates a semantic bridge between your LLM and the chaotic native UI of Android.
 
-Building agents for mobile is hard. Vision APIs are slow, expensive, and flaky. `uiautomator` is brittle.
+---
 
-**Android Use** solves this by converting the raw Accessibility Tree into a lightweight, clean JSON representation.
+### ⚡ Why This Exists (The "Moat")
 
-* **💸 95% Cheaper:** Stops burning tokens on high-res screenshots. Uses text-only context.
-* **🏎️ 10x Faster:** Zero image processing latency. Real-time execution.
-* **🧠 Self-Healing:** Finds buttons by *meaning* ("Connect"), not just coordinates. If the UI changes, your agent adapts.
+Most agents fight for attention in the browser. **Android Use** fights for utility in the OS.
+
+| Feature | 🌐 Web Agents (Browser Use) | 💻 Desktop Agents (Claude) | 📱 **Android Use** |
+| :--- | :--- | :--- | :--- |
+| **Environment** | Sandboxed Browser | Desktop OS (Mac/Windows) | **Mobile OS (Android)** |
+| **Filesystem** | ❌ Blocked | ✅ Local Only | **✅ Full Local + Camera** |
+| **App Switching** | ❌ Impossible | ✅ Desktop Apps | **✅ Native Mobile Apps** |
+| **Use Case** | Research, Booking | Coding, Admin | **Field Ops, Logistics, Gig** |
 
 ---
 
 ### 🚀 Quick Start
 
-#### Prerequisites
-1.  **Python 3.10+**
-2.  **ADB Installed** (`brew install android-platform-tools`)
-3.  **An Android Device** (Physical Pixel, Samsung, or Emulator) connected via USB/WiFi.
-
-#### Installation
-
+#### 1. Install
+Since we are in active beta, install directly from source:
 ```bash
-# Clone the repository
 git clone [https://github.com/your-username/android-use.git](https://github.com/your-username/android-use.git)
 cd android-use
-
-# Install dependencies
-pip install -r requirements.txt
+pip install -e .
+# Requires ADB to be installed and a device connected
