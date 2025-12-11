@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Status: Public Beta](https://img.shields.io/badge/Status-Public_Beta-orange)]()
-[![Twitter Follow](https://img.shields.io/twitter/follow/AndroidUse?style=social)](https://twitter.com/AndroidUse)
+[![Twitter Follow](https://img.shields.io/twitter/follow/AndroidUse?style=social)](https://x.com/ethanjlim)
 
 **Android Use** connects AI Agents to native Android applications. It allows LLMs to interact with the "real world" apps that web agents cannot reach—Logistics, Gig Economy, Banking, and Identity.
 
